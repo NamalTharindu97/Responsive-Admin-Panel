@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../imgs/logo.png";
 import "./sidebar.css";
-import UilReact from "@iconscout/react-unicons/icons/uil-react";
+import { SiderBarData } from "../../data/Data";
 
 const SideBar = () => {
 	return (
@@ -15,18 +15,14 @@ const SideBar = () => {
 			</div>
 			{/* menu */}
 			<div className="menu">
-				<div className="menu-Item">
-					<div>
-						<UilReact />
-					</div>
-					<span>Dashboard</span>
-				</div>
-				<div className="menu-Item">
-					<div>
-						<UilReact />
-					</div>
-					<span>Dashboard</span>
-				</div>
+				{SiderBarData.map((item, index) => {
+					return (
+						<div className="menu-Item">
+							<item.icon />
+							<span>{item.heading}</span>
+						</div>
+					);
+				})}
 			</div>
 		</div>
 	);
