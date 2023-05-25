@@ -21,4 +21,8 @@ export const SiderBarData = [
 		icon: UilReact,
 		heading: "Analytics",
 	},
+	{
+		icon: UilReact,
+		heading: "LogOut",
+	},
 ];
