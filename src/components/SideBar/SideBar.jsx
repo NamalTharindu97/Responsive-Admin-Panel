@@ -17,7 +17,7 @@ const SideBar = () => {
 			<div className="menu">
 				{SiderBarData.map((item, index) => {
 					return (
-						<div className="menu-Item">
+						<div className="menu-Item active">
 							<item.icon />
 							<span>{item.heading}</span>
 						</div>
