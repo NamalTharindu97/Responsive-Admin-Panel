@@ -29,6 +29,7 @@ const CompactCard = ({ param }) => {
 					value={param.barValue}
 					text={`${param.barValue}%`}
 				/>
+				<span>{param.title}</span>
 			</div>
 			<div className="details">
 				<Png />
