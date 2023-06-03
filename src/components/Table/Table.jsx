@@ -81,7 +81,9 @@ const BasicTable = () => {
 										{row.status}
 									</span>
 								</TableCell>
-								<TableCell align="left">Details</TableCell>
+								<TableCell align="left" className="Details">
+									Details
+								</TableCell>
 							</TableRow>
 						))}
 					</TableBody>
