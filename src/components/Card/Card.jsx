@@ -4,7 +4,7 @@ import { motion, AnimateSharedLayout } from "framer-motion";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Chart from "react-apexcharts";
-import UilReact from "@iconscout/react-unicons/icons/uil-react";
+import { UilTimes } from "@iconscout/react-unicons";
 
 const Card = (props) => {
 	const [expanded, setExpanded] = useState(false);
@@ -115,8 +115,14 @@ const ExpandedCard = ({ param, setExpanded }) => {
 			}}
 			layoutId="expandableCard"
 		>
-			<div>
-				<UilReact onClick={setExpanded} />
+			<div
+				style={{
+					alignSelf: "flex-end",
+					cursor: "pointer",
+					color: "white",
+				}}
+			>
+				<UilTimes onClick={setExpanded} />
 			</div>
 			<span>{param.title}</span>
 			<div className="chartContainer">
