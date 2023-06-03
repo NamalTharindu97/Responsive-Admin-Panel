@@ -1,28 +1,39 @@
-import UilReact from "@iconscout/react-unicons/icons/uil-react";
+// Sidebar imports
+import {
+	UilEstate,
+	UilClipboardAlt,
+	UilUsersAlt,
+	UilPackage,
+	UilChart,
+	UilSignOutAlt,
+} from "@iconscout/react-unicons";
+
+// Analytics Cards imports
+import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
 
 export const SiderBarData = [
 	{
-		icon: UilReact,
+		icon: UilEstate,
 		heading: "Dashboard",
 	},
 	{
-		icon: UilReact,
+		icon: UilClipboardAlt,
 		heading: "Orders",
 	},
 	{
-		icon: UilReact,
+		icon: UilUsersAlt,
 		heading: "Customers",
 	},
 	{
-		icon: UilReact,
+		icon: UilPackage,
 		heading: "Products",
 	},
 	{
-		icon: UilReact,
+		icon: UilChart,
 		heading: "Analytics",
 	},
 	{
-		icon: UilReact,
+		icon: UilSignOutAlt,
 		heading: "LogOut",
 	},
 ];
@@ -36,7 +47,7 @@ export const CardData = [
 		},
 		barValue: "70",
 		value: "25,970",
-		png: UilReact,
+		png: UilUsdSquare,
 		series: [
 			{
 				name: "sales",
@@ -53,7 +64,7 @@ export const CardData = [
 		},
 		barValue: 80,
 		value: "14,270",
-		png: UilReact,
+		png: UilMoneyWithdrawal,
 		series: [
 			{
 				name: "Revenue",
@@ -71,7 +82,7 @@ export const CardData = [
 		},
 		barValue: "60",
 		value: "4,970",
-		png: UilReact,
+		png: UilClipboardAlt,
 		series: [
 			{
 				name: "Expenses",
